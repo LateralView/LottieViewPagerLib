@@ -11,7 +11,7 @@ import android.util.AttributeSet;
  * Created by Joaquin on 3/26/18.
  */
 
-class LottieViewPager extends ViewPager
+public class LottieViewPager extends ViewPager
 {
 
     private static LottieListener mLottieListener;

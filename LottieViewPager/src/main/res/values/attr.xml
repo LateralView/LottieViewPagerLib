@@ -3,6 +3,5 @@
     <declare-styleable name="LottiePager">
     <attr name="lottieFilePath" format="string"/>
     <attr name="lottieAnimationLength" format="integer"/>
-    <attr name="lottieAnimationSteps" format="reference"/>
     </declare-styleable>
 </resources>

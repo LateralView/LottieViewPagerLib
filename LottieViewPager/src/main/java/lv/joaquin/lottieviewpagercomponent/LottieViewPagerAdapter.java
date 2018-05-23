@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by Joaquin on 3/26/18.
  */
 
-class LottieViewPagerAdapter extends PagerAdapter
+public class LottieViewPagerAdapter extends PagerAdapter
 {
     private Context mContext;
     private double[] lottieTimeArray;
