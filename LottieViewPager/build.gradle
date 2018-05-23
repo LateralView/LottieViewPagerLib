@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 
+def RELEASE_VERSION = "1.0"
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -19,6 +21,9 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+    lintOptions {
+        checkReleaseBuilds false
+    }
 }
 
 dependencies {
@@ -34,3 +39,12 @@ dependencies {
     implementation 'com.airbnb.android:lottie:2.5.0-rc1'
     implementation 'com.android.support:support-v4:27.1.1'
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'joaquingatti'
+    PUBLISH_ARTIFACT_ID = 'Lottie_Viewpager'
+    PUBLISH_VERSION = RELEASE_VERSION
+}
+
+//Script to generate .aar file
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
