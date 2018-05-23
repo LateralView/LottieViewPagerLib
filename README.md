@@ -30,7 +30,7 @@
       app:lottieFilePath="animations/animation_test.json"
       app:lottieAnimationLength="4010">
 ````
-* Configure steps on the activity 
+* Configure steps on the activity (steps are the pauses in the animation expressed in millis)
 ````    
         LottiePager lottiePager = findViewById(R.id.lottie_pager);
         lottiePager.setUpView(new int[]{0,1000,2000,3000,4000});
