@@ -2,7 +2,7 @@
 
 ## Steps to add library to your project
 
-* Download and import module
+* import from gradle: ````compile 'joaquingatti:Lottie_Viewpager:1.0'````
 * Add Java 8 copmpatibility to your gradle file
 ```` 
     ....
